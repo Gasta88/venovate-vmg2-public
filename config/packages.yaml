@@ -1,0 +1,44 @@
+# 6 packages, 6 segments, package↔segment mapping, depth (deep/light).
+# Single source of truth; the deep/light split controls how much work each
+# package gets (light = insilico workshop, venospatial, gem by config).
+#
+# Maria's 4 Oct 2026 approved package numbering (display_name is the official
+# title). Keys follow her numbering (issue-53 D-01): p1_…p6_…, config order P1–P6.
+
+segments:
+  - academic_labs
+  - pharma_biotech
+  - ai_bio_frontier
+  - investors_tto
+  - early_career_researchers
+  - future_spin_offs
+
+packages:
+  - name: p1_venospatial
+    display_name: "P1 VENOSPATIAL: Standardized Spatial Multi-Omics Pipeline"
+    depth: light
+    segments: [academic_labs, pharma_biotech, ai_bio_frontier]
+  - name: p2_insilico_workshop
+    display_name: "P2 In Silico Workshop: AlphaFold and Molecular Dynamics for Venom Mining"
+    depth: light
+    segments: [early_career_researchers, future_spin_offs]
+  - name: p3_marketplace
+    display_name: "P3 Marketplace for Venom and Peptide Expertise"
+    depth: deep
+    segments: [academic_labs, pharma_biotech, ai_bio_frontier, investors_tto]
+    notes: overlaps with p5_venomate; overlaps with p4_peptide_service (lists synthesis/folding/purification services)
+  - name: p4_peptide_service
+    display_name: "P4 Peptide Chemistry Service for Disulfide-Rich Peptides"
+    depth: deep
+    segments: [academic_labs, pharma_biotech]
+    notes: overlaps with p3_marketplace (marketplace lists the same synthesis/folding/purification services)
+  - name: p5_venomate
+    display_name: "P5 VenoMate: Expertise and Resource Matching"
+    depth: deep
+    segments: [academic_labs, pharma_biotech, ai_bio_frontier]
+    notes: overlaps with p3_marketplace
+  - name: p6_gem
+    display_name: "P6 Galleria Envenoming Model (G.E.M.) Screening Service"
+    depth: light
+    segments: [academic_labs, pharma_biotech]
+    notes: antivenom-screening package; enters the pulled universe at the light 1–2 query budget (issue-53 D-02 widened the 2026-10-04 five-package freeze)

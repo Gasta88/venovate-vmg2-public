@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"peptide therapeutics\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=authorships.countries&per-page=200&cursor=*&api_key=***&filter=title.search:\"peptide therapeutics\",from_publication_date:2015-01-01",
+  "timestamp": "2026-10-06T10:20:40Z",
+  "record_count": 36,
+  "sha256": "ffeb6102afa10206c40d9e4e91b8ac2dcf84813a183606033c25e811b7b1926f",
+  "snapshot": "p4_peptide_service-authorships.countries.csv",
+  "format": "csv"
+}

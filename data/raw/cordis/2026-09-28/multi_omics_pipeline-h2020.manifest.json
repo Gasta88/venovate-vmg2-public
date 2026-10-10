@@ -1,0 +1,13 @@
+{
+  "source": "cordis",
+  "query": [
+    "multi-omics, multiomics",
+    "proteogenomics, spatial omics, single cell omics"
+  ],
+  "url": "https://cordis.europa.eu/data/cordis-h2020projects-csv.zip",
+  "timestamp": "2026-09-28T18:32:59Z",
+  "record_count": 78,
+  "sha256": "53cf856c1d7aecc6b9862b97bb6ef18348823b95982e54eacc71044057cffc9f",
+  "snapshot": "multi_omics_pipeline-h2020.csv",
+  "format": "csv"
+}

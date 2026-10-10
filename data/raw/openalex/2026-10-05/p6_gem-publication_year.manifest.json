@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"Galleria mellonella\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=publication_year&per-page=200&cursor=*&api_key=***&filter=title.search:\"Galleria mellonella\",from_publication_date:2015-01-01",
+  "timestamp": "2026-10-05T18:02:39Z",
+  "record_count": 12,
+  "sha256": "66a6288ae5135376969011a9e1a5ef5984a7c5cf90cfa4d303601ca59f79c9e2",
+  "snapshot": "p6_gem-publication_year.csv",
+  "format": "csv"
+}

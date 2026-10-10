@@ -1,0 +1,15 @@
+{
+  "source": "cordis",
+  "query": [
+    "solid phase peptide synthesis, solid-phase peptide synthesis, peptide synthesis",
+    "peptide conjugation, peptide conjugates, gmp peptide, peptide manufacturing",
+    "peptide therapeutics, long acting peptide, peptide drug, therapeutic peptide",
+    "antimicrobial peptide, cyclic peptide, peptidomimetic, peptide vaccine, peptide library"
+  ],
+  "url": "https://cordis.europa.eu/data/cordis-h2020projects-csv.zip",
+  "timestamp": "2026-10-06T10:22:45Z",
+  "record_count": 63,
+  "sha256": "0e4baaf07eefe381a8662e9a3b18ea51e896d7ce3986e97b9e55e8f4af7c7f7c",
+  "snapshot": "p4_peptide_service-h2020.csv",
+  "format": "csv"
+}

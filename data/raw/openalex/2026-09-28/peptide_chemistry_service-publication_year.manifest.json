@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"peptide therapeutics\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=publication_year&per-page=200&cursor=*&api_key=***&filter=title.search:\"peptide therapeutics\",from_publication_date:2015-01-01",
+  "timestamp": "2026-09-28T18:34:24Z",
+  "record_count": 12,
+  "sha256": "611cee210b62842bfa2f449b5bff6427fcd111842cfaacc9ab31ee3878f12e28",
+  "snapshot": "peptide_chemistry_service-publication_year.csv",
+  "format": "csv"
+}

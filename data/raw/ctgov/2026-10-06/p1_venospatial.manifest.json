@@ -1,0 +1,10 @@
+{
+  "source": "ctgov",
+  "query": "query.term=AREA[ConditionSearch]\"multi-omics\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED",
+  "url": "https://clinicaltrials.gov/api/v2/studies?query.term=AREA[ConditionSearch]\"multi-omics\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED&pageSize=1000",
+  "timestamp": "2026-10-06T10:20:55Z",
+  "record_count": 154,
+  "sha256": "cb40f9f3860a9254aca36c1f5fbef0a9493775bba4c253e4f2b24942490ecbf8",
+  "snapshot": "p1_venospatial.jsonl",
+  "format": "jsonl"
+}

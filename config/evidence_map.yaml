@@ -1,0 +1,101 @@
+# Evidence role declaration per pulled count (issue-53 D-03/WI-05).
+#
+# role: driver  — the count feeds a sizing assumption (`feeds:` names the
+#                 assumptions.csv parameter);
+#       context — ecosystem signal, prose only, never a sizing input;
+#       n/a     — no meaningful source for this package × source; documented
+#                 here, NOT pulled (the cell is omitted from queries.yaml).
+#
+# `claim` is the prose-claim anchor: what the count is allowed to evidence in
+# the report (AC-4 spot-check target — no count may be used as evidence for
+# something its query doesn't measure). D-26 boundary: ClinicalTrials.gov
+# counts are context only — a ctgov claim anchor never reads as evidence of
+# commercial demand, and overlapping package records are disclosed, never
+# summed (scripts/check_claims.py enforces). Resolved into coverage.csv's `role`
+# column by scripts/build_tables.py (package × source level; openalex
+# dimensions may differ per row — the most load-bearing dimension wins).
+# Snapshot: data/raw/*/<date>/ per config/queries.yaml (retuned 2026-10-05).
+
+- {package: p1_venospatial, source: openalex, dimension: authorships.institutions.id,
+   role: driver, feeds: p1.tam.institutes,
+   claim: "institutions publishing spatial-omics work anchor the institute count"}
+- {package: p1_venospatial, source: openalex, dimension: publication_year, role: context,
+   claim: "spatial-omics activity level (works/yr); adoption signal only"}
+- {package: p1_venospatial, source: openalex, dimension: authorships.countries, role: context,
+   claim: "geographic spread of spatial-omics output"}
+- {package: p1_venospatial, source: ctgov, role: context,
+   claim: "omics-heavy interventional trial activity is ecosystem context;
+           never evidence of commercial demand for assays"}
+- {package: p1_venospatial, source: cordis, role: context,
+   claim: "EU-funded multi-omics/spatial-omics projects size the funded landscape"}
+
+- {package: p2_insilico_workshop, source: openalex, dimension: publication_year, role: context,
+   claim: "AlphaFold-attribution activity level (works/yr); adoption signal only"}
+- {package: p2_insilico_workshop, source: openalex, dimension: authorships.institutions.id,
+   role: driver, feeds: p2.tam.learner_pool,
+   claim: "institutions publishing AlphaFold work anchor the learner pool"}
+- {package: p2_insilico_workshop, source: openalex, dimension: authorships.countries, role: context,
+   claim: "geographic spread of AlphaFold usage"}
+- {package: p2_insilico_workshop, source: ctgov, role: n/a,
+   basis: "clinical-trial counts do not measure training demand (D-03: documented, not
+           pulled; cell omitted from queries.yaml per the issue-53 queries contract)"}
+- {package: p2_insilico_workshop, source: cordis, role: context,
+   claim: "EU doctoral-network/training actions evidence a funded training market"}
+
+- {package: p3_marketplace, source: openalex, dimension: authorships.institutions.id,
+   role: driver, feeds: p3.tam.active_labs,
+   claim: "institutions publishing peptide/AI-bio work anchor the adopter-lab count"}
+- {package: p3_marketplace, source: openalex, dimension: publication_year, role: context,
+   claim: "peptide-discovery output trend; activity signal only"}
+- {package: p3_marketplace, source: openalex, dimension: authorships.countries, role: context,
+   claim: "geographic spread of peptide-discovery output"}
+- {package: p3_marketplace, source: ctgov, role: context,
+   claim: "peptide-therapeutic trial activity is ecosystem context; never
+           evidence of commercial demand; the 5 Oct draft wrongly read it as
+           marketplace throughput — prose may cite it as context only"}
+- {package: p3_marketplace, source: cordis, role: context,
+   claim: "EU-funded discovery platforms/CRO projects are the brokerable-supply landscape"}
+
+- {package: p4_peptide_service, source: openalex, dimension: authorships.institutions.id,
+   role: driver, feeds: p4.tam.active_labs,
+   claim: "institutions publishing peptide-synthesis/therapeutics work anchor the
+           peptide-ordering lab count"}
+- {package: p4_peptide_service, source: openalex, dimension: publication_year, role: context,
+   claim: "peptide-chemistry output trend"}
+- {package: p4_peptide_service, source: openalex, dimension: authorships.countries, role: context,
+   claim: "geographic spread of peptide chemistry"}
+- {package: p4_peptide_service, source: ctgov, role: context,
+   claim: "peptide-drug trial activity is ecosystem context; never evidence of
+           commercial demand for synthesis services"}
+- {package: p4_peptide_service, source: cordis, role: context,
+   claim: "EU-funded peptide-manufacturing projects size the funded demand"}
+
+- {package: p5_venomate, source: openalex, dimension: authorships.institutions.id,
+   role: driver, feeds: p5.tam.active_labs,
+   claim: "institutions publishing venom-peptide/proteomics work anchor the venom-group count"}
+- {package: p5_venomate, source: openalex, dimension: publication_year, role: context,
+   claim: "venom-peptide corpus size/trajectory; the conotoxin query was dropped (cone
+           snail ≠ snake-venom groups — AC-4 fix)"}
+- {package: p5_venomate, source: openalex, dimension: authorships.countries, role: context,
+   claim: "geographic spread of venom research"}
+- {package: p5_venomate, source: ctgov, role: context,
+   claim: "envenomation/antivenom trial activity is ecosystem context — clinical
+           interest in venom products; never evidence of commercial demand;
+           not a count of venom labs"}
+- {package: p5_venomate, source: cordis, role: context,
+   claim: "EU-funded venom/toxin/snakebite projects size the funded research landscape"}
+
+- {package: p6_gem, source: openalex, dimension: publication_year, role: context,
+   claim: "Galleria-model activity level (works/yr); adoption signal only"}
+- {package: p6_gem, source: openalex, dimension: authorships.institutions.id,
+   role: driver, feeds: p6.tam.model_labs,
+   claim: "institutions publishing Galleria-model work anchor the lab count able to run/adopt
+           the G.E.M. screening service"}
+- {package: p6_gem, source: openalex, dimension: authorships.countries, role: context,
+   claim: "geographic spread of the model"}
+- {package: p6_gem, source: ctgov, role: context,
+   claim: "antivenom trial activity is ecosystem context; never evidence of
+           commercial demand for screening capacity; not evidence of G.E.M.
+           adoption (2 vs 7–14 days is a lead-stated calendar-days claim, D-17)"}
+- {package: p6_gem, source: cordis, role: context,
+   claim: "EU antivenom/snakebite funding is the programme landscape"}

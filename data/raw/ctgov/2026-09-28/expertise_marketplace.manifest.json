@@ -1,0 +1,10 @@
+{
+  "source": "ctgov",
+  "query": "query.term=AREA[Condition]\"Diabetes Mellitus, Type 2\" AND AREA[InterventionName]\"peptide\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED",
+  "url": "https://clinicaltrials.gov/api/v2/studies?query.term=AREA[Condition]\"Diabetes Mellitus, Type 2\" AND AREA[InterventionName]\"peptide\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED&pageSize=1000",
+  "timestamp": "2026-09-28T18:35:16Z",
+  "record_count": 384,
+  "sha256": "78a06f0fce30e21a35e00cd5f8a249341ebeb7097b48b9328acd8a72f2d7b7f3",
+  "snapshot": "expertise_marketplace.jsonl",
+  "format": "jsonl"
+}

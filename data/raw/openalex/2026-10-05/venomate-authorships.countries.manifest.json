@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"venom peptide\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=authorships.countries&per-page=200&cursor=*&api_key=***&filter=title.search:\"venom peptide\",from_publication_date:2015-01-01",
+  "timestamp": "2026-10-05T15:19:57Z",
+  "record_count": 49,
+  "sha256": "d84efe43a10cd47ecfe984a67bd749f348bb4cf0e767984eb86531a3501bd3b3",
+  "snapshot": "venomate-authorships.countries.csv",
+  "format": "csv"
+}

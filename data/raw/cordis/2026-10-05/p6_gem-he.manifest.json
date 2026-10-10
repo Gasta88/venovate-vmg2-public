@@ -1,0 +1,13 @@
+{
+  "source": "cordis",
+  "query": [
+    "galleria mellonella, invertebrate infection model",
+    "antivenom, snakebite, envenoming"
+  ],
+  "url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip",
+  "timestamp": "2026-10-05T18:06:20Z",
+  "record_count": 4,
+  "sha256": "7a4b8514eea4c7e28012e514e839681049902ab14a11dc46497422b21b5ac9e3",
+  "snapshot": "p6_gem-he.csv",
+  "format": "csv"
+}

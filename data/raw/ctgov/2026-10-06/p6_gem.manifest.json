@@ -1,0 +1,10 @@
+{
+  "source": "ctgov",
+  "query": "query.term=AREA[InterventionName]\"antivenom\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED",
+  "url": "https://clinicaltrials.gov/api/v2/studies?query.term=AREA[InterventionName]\"antivenom\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED&pageSize=1000",
+  "timestamp": "2026-10-06T10:21:39Z",
+  "record_count": 10,
+  "sha256": "9238761afe3f6e6741039206e46ee16a713006ade8fa9b32167966dd71c6a453",
+  "snapshot": "p6_gem.jsonl",
+  "format": "jsonl"
+}

@@ -1,0 +1,14 @@
+[project]
+name = "venovate-vmg2"
+version = "0.1.0"
+description = "VMG2 business plan analysis: scripts feed market sizing and trend charts"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "pandas>=2.2",
+    "pyyaml>=6.0",
+    "matplotlib>=3.9",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]

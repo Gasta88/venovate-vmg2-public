@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"AlphaFold\",from_publication_date:2021-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=authorships.countries&per-page=200&cursor=*&api_key=***&filter=title.search:\"AlphaFold\",from_publication_date:2021-01-01",
+  "timestamp": "2026-10-06T10:20:34Z",
+  "record_count": 77,
+  "sha256": "894185f6b5e89183659c32d37813e43d2f2ef17fe4db190c0a05591e4c36972f",
+  "snapshot": "p2_insilico_workshop-authorships.countries.csv",
+  "format": "csv"
+}

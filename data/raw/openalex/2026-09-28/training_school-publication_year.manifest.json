@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"peptide engineering\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=publication_year&per-page=200&cursor=*&api_key=***&filter=title.search:\"peptide engineering\",from_publication_date:2015-01-01",
+  "timestamp": "2026-09-28T18:34:26Z",
+  "record_count": 11,
+  "sha256": "e04acccf60c87a29e189ffce936dc4589fb4aa60c37ed6a77282f5ed4cc05147",
+  "snapshot": "training_school-publication_year.csv",
+  "format": "csv"
+}

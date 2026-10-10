@@ -1,0 +1,154 @@
+# Every search term per source × package. Single source of truth.
+#
+# Structure (shape per the 2026-09-26 contract; keys renamed + universe
+# widened to six per issue-53 D-01/D-02, superseding the 2026-10-04
+# five-package freeze): source → package → list of query strings. Package keys
+# are config/packages.yaml names; a source × package cell is OMITTED only where
+# config/evidence_map.yaml declares role n/a (documented, not pulled — D-03;
+# currently p2_insilico_workshop × ctgov). Depth budget from packages.yaml:
+# deep packages (p3_marketplace, p4_peptide_service, p5_venomate)
+# get 3–5 query strings per source; light packages (p1_venospatial,
+# p2_insilico_workshop, p6_gem) get 1–2. For openalex the band counts plain
+# `filter=` strings only; `&group_by=` count strings are additive, ≥1 per
+# package (spec Decision D-1).
+#
+# Retuned 2026-10-05 (issue-53 WI-02): every string must measure what the
+# report's claim asserts (AC-4). Notable fixes vs the 2026-09-28 tuning:
+# p5_venomate drops `conotoxin` (cone-snail pharmacology, not snake-venom
+# groups) for `venom proteomics` (the actual lab population); p5 ctgov drops
+# `bite injuries` (matches non-serpent bites); p5 cordis drops bare `peptide`
+# (over-matched non-venom projects); p6_gem enters at the light budget
+# (`Galleria mellonella` model-adoption literature, antivenom-trial and
+# snakebite-funding context); p1 retunes from generic `multi-omics pipeline`
+# to `spatial omics` (the actual product); p2 retunes to `AlphaFold`
+# adoption (the workshop's subject). Roles + prose anchors:
+# config/evidence_map.yaml.
+#
+# Every string is a self-contained, complete query-string fragment: the
+# snapshot manifest records each `query` field verbatim, so the pull step
+# passes these through with minimal assembly. No credentials in this
+# file — auth lives in .env (decisions.md 2026-09-26). All terms are kept at
+# category level (biosecurity rule): no specific toxin/target acquisition
+# lists.
+#
+# Sources and per-source syntax (consumers: scripts/pull_openalex.py,
+# scripts/pull_ctgov.py, scripts/pull_cordis.py):
+#
+# openalex — `filter=` strings: comma-separated key:value pairs. Keys used
+#   here: title.search, abstract.search, from_publication_date. No
+#   concepts.id (concepts are deprecated in favor of topics — never invented,
+#   spec D-3). Separate `&group_by=` count strings give cheap landscape
+#   aggregation (publication_year baseline; authorships.countries and
+#   authorships.institutions.id are doc-verified dimensions available for the
+#   year × country × institution aggregation pull_openalex.py targets).
+#   COST: plain filter+list calls are $0.10/1k, but ⚠ title.search /
+#   abstract.search filters are DEPRECATED (OpenAlex searching docs,
+#   verified 2026-09-26 — they still work; the docs steer new code to the
+#   `search` parameter) and are billed as search at $1/1k, not $0.10/1k.
+#   They are kept here because this config mandates filter/group_by over
+#   bare search= (issue-2 constraints); prefer group_by counts over
+#   full-works pulls, and revisit the quoting style if search-tier billing
+#   becomes material.
+#
+# ctgov — ClinicalTrials.gov API v2: `query.term=AREA[Field]"value"` clauses
+#   joined by ` AND `; every string ends with
+#   `&filter.overallStatus=RECRUITING,COMPLETED`. AREA fields validated live
+#   against the API (HTTP 200) 2026-09-26: ConditionSearch, Condition,
+#   StudyType, InterventionName, BriefTitle. (Intervention and Title are
+#   invalid field names — the API answers 400.)
+#
+# cordis — no query-API syntax: each entry is one comma-separated lowercase
+#   keyword list matched LOCALLY against the bulk-CSV project title and
+#   objective. Match rule (spec D-4): a project matches a list if ANY
+#   keyword occurs (case-insensitive) in its title or objective. Bulk-CSV
+#   download URLs are captured as comments in the cordis section below.
+#
+# Validation gates V-1…V-7: specs/issue-2-spec.md § Test Strategy.
+
+openalex:
+  p1_venospatial:
+    - 'filter=title.search:"spatial omics",from_publication_date:2015-01-01'
+    - 'filter=title.search:"spatial omics",from_publication_date:2015-01-01&group_by=publication_year'
+  p2_insilico_workshop:
+    - 'filter=title.search:"AlphaFold",from_publication_date:2021-01-01'
+    - 'filter=title.search:"AlphaFold",from_publication_date:2021-01-01&group_by=publication_year'
+  p3_marketplace:
+    - 'filter=title.search:"peptide drug discovery",from_publication_date:2015-01-01'
+    - 'filter=title.search:"machine learning peptide",from_publication_date:2015-01-01'
+    - 'filter=title.search:"protein engineering",from_publication_date:2015-01-01'
+    - 'filter=abstract.search:"contract research organization",from_publication_date:2015-01-01'
+    - 'filter=title.search:"peptide drug discovery",from_publication_date:2015-01-01&group_by=publication_year'
+  p4_peptide_service:
+    - 'filter=title.search:"solid phase peptide synthesis",from_publication_date:2015-01-01'
+    - 'filter=title.search:"peptide conjugation",from_publication_date:2015-01-01'
+    - 'filter=title.search:"peptide therapeutics",from_publication_date:2015-01-01'
+    - 'filter=title.search:"disulfide-rich peptide",from_publication_date:2015-01-01'
+    - 'filter=title.search:"peptide therapeutics",from_publication_date:2015-01-01&group_by=publication_year'
+  p5_venomate:
+    - 'filter=title.search:"venom peptide",from_publication_date:2015-01-01'
+    - 'filter=title.search:"venom-derived peptides",from_publication_date:2015-01-01'
+    - 'filter=abstract.search:"snake venom drug discovery",from_publication_date:2015-01-01'
+    - 'filter=title.search:"venom proteomics",from_publication_date:2015-01-01'
+    - 'filter=title.search:"venom peptide",from_publication_date:2015-01-01&group_by=publication_year'
+  p6_gem:
+    - 'filter=title.search:"Galleria mellonella",from_publication_date:2015-01-01'
+    - 'filter=title.search:"Galleria mellonella",from_publication_date:2015-01-01&group_by=publication_year'
+
+ctgov:
+  # p2_insilico_workshop omitted: clinical-trial counts do not measure training
+  # demand — role n/a in config/evidence_map.yaml (D-03: documented, not pulled).
+  p1_venospatial:
+    - 'query.term=AREA[ConditionSearch]"multi-omics" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[ConditionSearch]"proteomics" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+  p3_marketplace:
+    - 'query.term=AREA[Condition]"Diabetes Mellitus, Type 2" AND AREA[InterventionName]"peptide" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[InterventionName]"peptide" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[ConditionSearch]"rare disease" AND AREA[InterventionName]"peptide" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+  p4_peptide_service:
+    - 'query.term=AREA[InterventionName]"peptide" AND AREA[ConditionSearch]"oncology" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[InterventionName]"antimicrobial peptide" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[ConditionSearch]"chronic pain" AND AREA[InterventionName]"conotoxin" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[InterventionName]"peptide drug conjugate" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+  p5_venomate:
+    - 'query.term=AREA[ConditionSearch]"snake envenomations" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[ConditionSearch]"envenomation" AND AREA[InterventionName]"antivenom" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[BriefTitle]"venom peptide" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+    - 'query.term=AREA[ConditionSearch]"envenomation"&filter.overallStatus=RECRUITING,COMPLETED'
+  p6_gem:
+    - 'query.term=AREA[InterventionName]"antivenom" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED'
+
+cordis:
+  # Bulk CSVs — download URLs (issue-4 pull_cordis.py consumes; spec D-2).
+  # Slugs resolved on data.europa.eu 2026-09-26 from the indexed dataset
+  # pages, NOT guessed; the portal is a client-side SPA that answers HTTP
+  # 200 for any path, so a bare HEAD check cannot confirm them — re-verify
+  # in a browser if a download 404s at pull time (gate V-5/V-7, ST-6 note).
+  # H2020 (2014-2020) — distribution "H2020 Projects" (CSV):
+  #   https://data.europa.eu/data/datasets/cordish2020projects
+  # Horizon Europe (2021-2027) — distribution "HORIZON Projects" (CSV):
+  #   https://data.europa.eu/data/datasets/cordis-eu-research-projects-under-horizon-europe-2021-2027
+  # Match semantics per file header (D-4): any keyword, case-insensitive,
+  # in project title or objective.
+  p1_venospatial:
+    - 'spatial omics, spatial transcriptomics, proteogenomics'
+    - 'multi-omics, multiomics'
+  p2_insilico_workshop:
+    - 'doctoral network, doctoral training'
+    - 'early stage researcher, marie curie'
+  p3_marketplace:
+    - 'peptide synthesis service, custom peptide, peptide discovery'
+    - 'contract research organization, contract research, outsourced research'
+    - 'drug discovery platform, high throughput screening, ai driven drug discovery'
+    - 'protein engineering, antibody engineering, biologics development'
+  p4_peptide_service:
+    - 'solid phase peptide synthesis, solid-phase peptide synthesis, peptide synthesis'
+    - 'peptide conjugation, peptide conjugates, gmp peptide, peptide manufacturing'
+    - 'peptide therapeutics, long acting peptide, peptide drug, therapeutic peptide'
+    - 'antimicrobial peptide, cyclic peptide, peptidomimetic, peptide vaccine, peptide library'
+  p5_venomate:
+    - 'venom, envenomation, snakebite, antivenom'
+    - 'snake venom, venom proteomics, peptidomics'
+    - 'toxin, toxinology, envenoming'
+  p6_gem:
+    - 'galleria mellonella, invertebrate infection model'
+    - 'antivenom, snakebite, envenoming'

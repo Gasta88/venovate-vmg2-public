@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"AlphaFold\",from_publication_date:2021-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=publication_year&per-page=200&cursor=*&api_key=***&filter=title.search:\"AlphaFold\",from_publication_date:2021-01-01",
+  "timestamp": "2026-10-06T10:20:34Z",
+  "record_count": 6,
+  "sha256": "2f8335728080bf02aa3c1d2dfe64018748dd7a184f9a4dea5f1b880ac1bcc26c",
+  "snapshot": "p2_insilico_workshop-publication_year.csv",
+  "format": "csv"
+}

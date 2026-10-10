@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=abstract.search:\"peptide drug discovery\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=authorships.countries&per-page=200&cursor=*&api_key=***&filter=abstract.search:\"peptide drug discovery\",from_publication_date:2015-01-01",
+  "timestamp": "2026-10-05T15:20:00Z",
+  "record_count": 32,
+  "sha256": "2d3d59ee2ff36f7cfb53fb49cfba787de45504c2a5f231451fadbab9ddfe5769",
+  "snapshot": "expertise_marketplace-authorships.countries.csv",
+  "format": "csv"
+}

@@ -1,0 +1,10 @@
+{
+  "source": "ctgov",
+  "query": "query.term=AREA[ConditionSearch]\"snake bite\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED",
+  "url": "https://clinicaltrials.gov/api/v2/studies?query.term=AREA[ConditionSearch]\"snake bite\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED&pageSize=1000",
+  "timestamp": "2026-10-05T15:20:57Z",
+  "record_count": 13,
+  "sha256": "dd1c6c0e365aa2edc8869271f5834abddf2f7768ac75c0540b37b16cbd0f1feb",
+  "snapshot": "training_school.jsonl",
+  "format": "jsonl"
+}

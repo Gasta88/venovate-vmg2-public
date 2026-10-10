@@ -1,0 +1,10 @@
+{
+  "source": "ctgov",
+  "query": "query.term=AREA[ConditionSearch]\"snake envenomations\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED",
+  "url": "https://clinicaltrials.gov/api/v2/studies?query.term=AREA[ConditionSearch]\"snake envenomations\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED&pageSize=1000",
+  "timestamp": "2026-09-28T18:35:14Z",
+  "record_count": 36,
+  "sha256": "d80e142a77cd24c2132f6de2e8e2f173e40dc9f2cd11ac1661f5a986c483ccdd",
+  "snapshot": "venomate.jsonl",
+  "format": "jsonl"
+}

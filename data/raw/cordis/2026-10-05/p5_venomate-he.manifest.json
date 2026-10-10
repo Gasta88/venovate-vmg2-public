@@ -1,0 +1,14 @@
+{
+  "source": "cordis",
+  "query": [
+    "venom, envenomation, snakebite, antivenom",
+    "snake venom, venom proteomics, peptidomics",
+    "toxin, toxinology, envenoming"
+  ],
+  "url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip",
+  "timestamp": "2026-10-05T18:06:14Z",
+  "record_count": 76,
+  "sha256": "d8821f9207eae019926c0143a1c084558ca6cadaae416d0bd83a2b450f79aae9",
+  "snapshot": "p5_venomate-he.csv",
+  "format": "csv"
+}

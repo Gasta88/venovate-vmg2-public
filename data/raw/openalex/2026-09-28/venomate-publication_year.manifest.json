@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"venom peptide\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=publication_year&per-page=200&cursor=*&api_key=***&filter=title.search:\"venom peptide\",from_publication_date:2015-01-01",
+  "timestamp": "2026-09-28T18:34:19Z",
+  "record_count": 12,
+  "sha256": "2f8594115891977370450287884001d7a8b6153e363be8468c963c8162d7a0ed",
+  "snapshot": "venomate-publication_year.csv",
+  "format": "csv"
+}

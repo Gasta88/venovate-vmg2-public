@@ -1,0 +1,10 @@
+{
+  "source": "ctgov",
+  "query": "query.term=AREA[InterventionName]\"peptide\" AND AREA[ConditionSearch]\"oncology\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED",
+  "url": "https://clinicaltrials.gov/api/v2/studies?query.term=AREA[InterventionName]\"peptide\" AND AREA[ConditionSearch]\"oncology\" AND AREA[StudyType]INTERVENTIONAL&filter.overallStatus=RECRUITING,COMPLETED&pageSize=1000",
+  "timestamp": "2026-09-28T18:35:26Z",
+  "record_count": 215,
+  "sha256": "2f2eae12f69283341609636e97f9287c718907391de3f97ce4a17e3a2bd5719f",
+  "snapshot": "peptide_chemistry_service.jsonl",
+  "format": "jsonl"
+}

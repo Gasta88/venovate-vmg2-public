@@ -1,0 +1,313 @@
+# Global reference list for the VMG2 report (issue-53 D-09).
+# Rendered once at the end of the document by `pandoc --citeproc` (see the
+# Makefile `report` target); per-section source lists are retired.
+# CSL YAML: strings are parsed as pandoc Markdown, so titles are in sentence
+# case (the style up-cases as needed). Cite keys with [@key] in the sections.
+
+- type: article-journal
+  id: plosntd2016
+  author:
+    - family: Groneberg
+      given: David A.
+    - family: Geier
+      given: Victoria
+    - family: Klingelhöfer
+      given: Doris
+    - family: Gerber
+      given: Alexander
+    - family: Kuch
+      given: Ulrich
+    - family: Kloft
+      given: Beatrix
+  issued: {date-parts: [[2016, 11, 7]]}
+  title: "Snakebite envenoming — a combined density equalizing mapping and scientometric analysis of the publication history"
+  container-title: "PLOS Neglected Tropical Diseases"
+  volume: 10
+  issue: 11
+  page: "e0005046"
+  DOI: "10.1371/journal.pntd.0005046"
+
+- type: article-journal
+  id: animals2022
+  author:
+    - family: Sofyantoro
+      given: F.
+    - literal: "and others"
+  issued: {date-parts: [[2022, 8, 12]]}
+  title: "Bibliometric analysis of literature in snake venom-related research worldwide (1933–2022)"
+  container-title: "Animals"
+  volume: 12
+  issue: 16
+  page: "2058"
+  DOI: "10.3390/ani12162058"
+
+- type: report
+  id: gfinder2024
+  author:
+    - literal: "Impact-Global-Health"
+  issued: {date-parts: [[2025, 1, 30]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "G-FINDER 2024: The global funding of neglected disease R&D — snakebite envenoming"
+  publisher: "Impact Global Health"
+  note: "Report URL unresolvable at citation time; cited by name and date."
+
+- type: report
+  id: gfinder2019
+  author:
+    - literal: "Impact-Global-Health"
+  issued: {date-parts: [[2019]]}
+  title: "G-FINDER 2019 snakebite envenoming landscape survey"
+  publisher: "Impact Global Health"
+
+- type: report
+  id: iscb2025
+  author:
+    - literal: "International Society for Computational Biology"
+  issued: {date-parts: [[2025]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "ISCB EDI annual report 2025"
+  publisher: "International Society for Computational Biology"
+
+- type: article
+  id: ismb2025
+  author:
+    - literal: "International Society for Computational Biology"
+  issued: {date-parts: [[2025, 7]]}
+  title: "ISMB/ECCB 2025 attendance report (2,164 in-person participants from 70 countries)"
+  container-title: "ISCB newsletter"
+
+- type: report
+  id: vbcf2024
+  author:
+    - literal: "Vienna BioCenter Core Facilities"
+  issued: {date-parts: [[2024]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Vienna BioCenter core facilities annual report 2024"
+  publisher: "Vienna BioCenter"
+
+- type: report
+  id: utah2025
+  author:
+    - literal: "University of Utah Health Sciences Center Cores"
+  issued: {date-parts: [[2025]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "University of Utah HSC cores annual report FY25"
+  publisher: "University of Utah Health"
+
+- type: report
+  id: uthscmemphis2023
+  author:
+    - literal: "University of Tennessee HSC Memphis"
+  issued: {date-parts: [[2023]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Institutional cores report FY23"
+  publisher: "University of Tennessee Health Science Center"
+
+- type: report
+  id: insight2025
+  author:
+    - literal: "The Insight Partners"
+  issued: {date-parts: [[2025, 1, 27]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "AI in drug discovery market report (USD 3.05B in 2024)"
+
+- type: report
+  id: gvr2025
+  author:
+    - literal: "Grand View Research"
+  issued: {date-parts: [[2025]]}
+  title: "AI in drug discovery market size report (public summary)"
+
+- type: report
+  id: mnm2025
+  author:
+    - literal: "MarketsandMarkets"
+  issued: {date-parts: [[2025]]}
+  title: "Artificial intelligence in drug discovery market report (public summary)"
+
+- type: report
+  id: valuates2024
+  author:
+    - literal: "Valuates / QY Research"
+  issued: {date-parts: [[2024, 12, 27]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Customized peptide synthesis market report (USD 1,078M in 2024 to USD 1,663.7M by 2030)"
+
+- type: report
+  id: fmi2025
+  author:
+    - literal: "Future Market Insights"
+  issued: {date-parts: [[2025, 10]]}
+  title: "Peptide synthesis services market outlook"
+
+- type: report
+  id: pmr2025
+  author:
+    - literal: "Persistence Market Research"
+  issued: {date-parts: [[2025]]}
+  title: "US–EU custom peptide services market report"
+
+- type: report
+  id: ucdavis2015
+  author:
+    - literal: "UC Davis Core Facility Program"
+  issued: {date-parts: [[2015]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Core facility program report FY14/15"
+  publisher: "University of California, Davis"
+
+- type: report
+  id: genopole2024
+  author:
+    - literal: "Genopole"
+  issued: {date-parts: [[2024]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Genopole annual report 2024"
+  publisher: "Genopole, Evry (FR)"
+
+- type: report
+  id: embo2026
+  author:
+    - literal: "EMBO"
+  issued: {date-parts: [[2026]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "EMBO practical course organizer guidelines (registration caps)"
+  url: "https://www.embo.org"
+
+- type: webpage
+  id: embl2026
+  author:
+    - literal: "EMBL Course & Conference Office"
+  issued: {date-parts: [[2024, 1, 1]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "EMBL courses and conferences 2024–2027 (registration fees)"
+  url: "https://www.embl.org"
+
+- type: report
+  id: polypeptide2022
+  author:
+    - literal: "PolyPeptide Group"
+  issued: {date-parts: [[2022]]}
+  title: "PolyPeptide annual report 2022"
+
+- type: webpage
+  id: genscript2024
+  author:
+    - literal: "GenScript"
+  issued: {date-parts: [[2024, 1, 1]]}
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Peptide synthesis price list (from USD 3.20 per amino acid; PSU–GenScript contract sheet 2024–2025)"
+  url: "https://www.genscript.com/gsfiles/peptide_services.pdf"
+
+- type: webpage
+  id: proteogenix2026
+  author:
+    - literal: "ProteoGenix"
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Custom peptide synthesis price list (from EUR 1.66 per amino acid, EUR 69 minimum)"
+
+- type: webpage
+  id: aapptec2026
+  author:
+    - literal: "AAPPTec"
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Peptide synthesis price list (USD 3.50–4.50 per residue crude, USD 125 minimum)"
+
+- type: webpage
+  id: bachem2026
+  author:
+    - literal: "Bachem"
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Custom peptide synthesis — premium tiers"
+  url: "https://www.bachem.com"
+
+- type: webpage
+  id: ist
+  author:
+    - literal: "International Society on Toxinology"
+  accessed: {date-parts: [[2026, 9, 29]]}
+  title: "IST membership directory (full/associate membership ~USD 55/yr; USD 550 lifetime)"
+  url: "https://toxinology.org/membership-directory/"
+
+- type: treaty
+  id: nagoya
+  title: "Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization"
+  url: "https://www.cbd.int/abs/"
+  issued: {date-parts: [[2010]]}
+
+- type: webpage
+  id: who2025
+  author:
+    - literal: "World Health Organization"
+  accessed: {date-parts: [[2026, 9, 25]]}
+  title: "Snakebite envenoming fact sheet"
+  url: "https://www.who.int/news-room/fact-sheets/detail/snakebite-envenoming"
+
+- type: report
+  id: whoantivenom2017
+  author:
+    - literal: "World Health Organization"
+  issued: {date-parts: [[2017]]}
+  accessed: {date-parts: [[2026, 10, 6]]}
+  title: "Guidelines for the production, control and regulation of snake antivenom immunoglobulins — WHO Technical Report Series No. 1004, Annex 5"
+  publisher: "World Health Organization"
+  url: "https://www.who.int/publications/m/item/snake-antivenom-immunoglobulins-annex-5-trs-no-1004"
+
+- type: webpage
+  id: nc3rs2024gem
+  author:
+    - literal: "NC3Rs"
+  accessed: {date-parts: [[2026, 10, 6]]}
+  title: "Development of Galleria mellonella as a replacement preclinical model for snakebite envenoming to reduce the need for murine models — project grant, award date December 2024 to November 2027, in progress"
+  url: "https://nc3rs.org.uk/our-portfolio/development-galleria-mellonella-replacement-preclinical-model-snakebite-envenoming"
+
+- type: webpage
+  id: cost2026
+  author:
+    - literal: "COST Association"
+  accessed: {date-parts: [[2026, 9, 29]]}
+  title: "Participate in an ongoing Action (e-COST mechanics)"
+  url: "https://www.cost.eu/cost-actions/participate-in-an-ongoing-action/"
+
+- type: webpage
+  id: galleria2026
+  author:
+    - literal: "Galleria Mellonella Research Centre"
+  accessed: {date-parts: [[2026, 10, 4]]}
+  title: "Galleria mellonella colony purchase and training (≈EUR 1,400)"
+  url: "https://www.galleria-mellonella.com/"
+
+- type: webpage
+  id: openalex
+  author:
+    - literal: "OurResearch"
+  title: "OpenAlex"
+  url: "https://openalex.org"
+
+- type: webpage
+  id: ctgov
+  author:
+    - literal: "U.S. National Library of Medicine"
+  title: "ClinicalTrials.gov"
+  url: "https://clinicaltrials.gov/"
+
+- type: webpage
+  id: cordis
+  author:
+    - literal: "European Commission"
+  title: "CORDIS — EU research project funding (H2020 and Horizon Europe project data)"
+  url: "https://cordis.europa.eu"
+
+- type: document
+  id: grantletter
+  author:
+    - literal: "COST Association / European Commission"
+  issued: {date-parts: [[2025]]}
+  title: "VMG grant letter, ref. E-COST-GRANT-IG19144-289974d6 (footnote to Art. 2.2)"
+
+- type: personal-communication
+  id: maria2026email
+  author:
+    - literal: "Maria, IMDEA Nutrition"
+  issued: {date-parts: [[2026, 10, 4]]}
+  title: "Approved package definitions and prices — email to the VMG2 team, 4 Oct 2026 (VMG2 package lead, personal communication)"

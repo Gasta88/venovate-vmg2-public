@@ -1,0 +1,49 @@
+% VMG2 Report PDF header — table formatting and margins
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+% Landscape pages for wide tables (see filters/table_landscape.lua).
+% pdflscape rather than lscape: it also sets the page /Rotate flag, so
+% viewers display the turned page the right way up. Not every TeX install
+% has it, so fall back to plain lscape (page content is still turned, the
+% viewer just shows it sideways) rather than failing the build.
+\IfFileExists{pdflscape.sty}{\usepackage{pdflscape}}{\usepackage{lscape}}
+
+% Tighter inter-column spacing (default is 6pt). Pandoc sizes its
+% wrapping columns as (\linewidth - 2n\tabcolsep) * fraction, so a
+% smaller tabcolsep widens every column rather than squeezing the table.
+% Tables turned sideways override this locally.
+\setlength{\tabcolsep}{3pt}
+
+% Table font sizing and spacing. Wide tables rotated by the landscape
+% filter redefine \tablefontsize inside their own group, so they can use
+% a larger size than tables that must fit the portrait text block.
+\newcommand{\tablefontsize}{\footnotesize}
+\renewcommand{\arraystretch}{1.1}
+\let\oldtable\table
+\let\endoldtable\endtable
+\renewenvironment{table}{\oldtable\tablefontsize}{\endoldtable}
+% \let must save longtable before it is redefined; otherwise the
+% replacement expands to itself and TeX loops forever without erroring.
+\let\oldlongtable\longtable
+\let\endoldlongtable\endlongtable
+\renewenvironment{longtable}{\tablefontsize\oldlongtable}{\endoldlongtable}
+
+% Pandoc emits snake_case cells (engagements\_per\_year) as a single
+% unbreakable box; in a 0.1\linewidth column it runs past the column and
+% prints over the neighbouring cell. This TeX install has no hyphenation
+% patterns (babel rejects 'english', polyglossia is absent), so words
+% cannot be broken internally — allow a break after each underscore
+% instead, which is what actually stops the overlap.
+\let\origunderscore\_
+\protected\def\_{\origunderscore\hspace{0pt}}
+
+% Page break before each top-level heading
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+% Better code block handling
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breaknonspaceingroup,commandchars=\\\{\}}

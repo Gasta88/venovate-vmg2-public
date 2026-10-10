@@ -1,0 +1,13 @@
+{
+  "source": "cordis",
+  "query": [
+    "spatial omics, spatial transcriptomics, proteogenomics",
+    "multi-omics, multiomics"
+  ],
+  "url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip",
+  "timestamp": "2026-10-05T18:05:26Z",
+  "record_count": 332,
+  "sha256": "f77086b64d0dbc99d28633e4e47dab52be129089915ea6d64dbcfa7690513e3b",
+  "snapshot": "p1_venospatial-he.csv",
+  "format": "csv"
+}

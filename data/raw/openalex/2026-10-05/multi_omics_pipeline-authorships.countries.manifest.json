@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=abstract.search:\"multi-omics pipeline\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=authorships.countries&per-page=200&cursor=*&api_key=***&filter=abstract.search:\"multi-omics pipeline\",from_publication_date:2015-01-01",
+  "timestamp": "2026-10-05T15:20:06Z",
+  "record_count": 32,
+  "sha256": "c8c6e3e37637ec4e2797008b96991124843735cdb2d6c2c1a9f7998e3906e51b",
+  "snapshot": "multi_omics_pipeline-authorships.countries.csv",
+  "format": "csv"
+}

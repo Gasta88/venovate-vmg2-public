@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=title.search:\"spatial omics\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=publication_year&per-page=200&cursor=*&api_key=***&filter=title.search:\"spatial omics\",from_publication_date:2015-01-01",
+  "timestamp": "2026-10-06T10:20:30Z",
+  "record_count": 10,
+  "sha256": "50ecb9d2d6c7adaa0339d5aa329bb94088dbe933080424d4f9f08f2050b2b714",
+  "snapshot": "p1_venospatial-publication_year.csv",
+  "format": "csv"
+}

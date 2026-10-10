@@ -1,0 +1,17 @@
+# secrets
+.env
+
+# generated drafts
+build/
+.DS_Store
+
+# throwaway notebooks / experiments
+scratch/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# AI artefacts
+specs/

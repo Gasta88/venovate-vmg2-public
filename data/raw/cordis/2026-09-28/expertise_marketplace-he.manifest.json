@@ -1,0 +1,15 @@
+{
+  "source": "cordis",
+  "query": [
+    "peptide synthesis service, custom peptide, peptide discovery",
+    "contract research organization, contract research, outsourced research",
+    "drug discovery platform, high throughput screening, ai driven drug discovery",
+    "protein engineering, antibody engineering, biologics development"
+  ],
+  "url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip",
+  "timestamp": "2026-09-28T18:33:18Z",
+  "record_count": 66,
+  "sha256": "ab59cb513fb294052d0fc6572a6d504121524dbd4f0c49c6bcb2de887ba7227d",
+  "snapshot": "expertise_marketplace-he.csv",
+  "format": "csv"
+}

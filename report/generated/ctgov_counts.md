@@ -1,0 +1,155 @@
+| package | dimension | key | count |
+| --- | --- | --- | --- |
+| p1_venospatial | country | Austria | 2 |
+| p1_venospatial | country | Belgium | 3 |
+| p1_venospatial | country | Brazil | 2 |
+| p1_venospatial | country | Canada | 7 |
+| p1_venospatial | country | China | 13 |
+| p1_venospatial | country | Czechia | 2 |
+| p1_venospatial | country | Denmark | 9 |
+| p1_venospatial | country | Egypt | 1 |
+| p1_venospatial | country | Faroe Islands | 1 |
+| p1_venospatial | country | France | 25 |
+| p1_venospatial | country | Germany | 3 |
+| p1_venospatial | country | Greece | 1 |
+| p1_venospatial | country | Hong Kong | 2 |
+| p1_venospatial | country | Iraq | 1 |
+| p1_venospatial | country | Israel | 1 |
+| p1_venospatial | country | Italy | 5 |
+| p1_venospatial | country | Netherlands | 1 |
+| p1_venospatial | country | North Macedonia | 1 |
+| p1_venospatial | country | Norway | 1 |
+| p1_venospatial | country | Poland | 1 |
+| p1_venospatial | country | Singapore | 4 |
+| p1_venospatial | country | Slovenia | 1 |
+| p1_venospatial | country | South Korea | 1 |
+| p1_venospatial | country | Spain | 8 |
+| p1_venospatial | country | Sweden | 1 |
+| p1_venospatial | country | Taiwan | 4 |
+| p1_venospatial | country | Turkey (Türkiye) | 2 |
+| p1_venospatial | country | United Kingdom | 5 |
+| p1_venospatial | country | United States | 49 |
+| p1_venospatial | overall_status | COMPLETED | 108 |
+| p1_venospatial | overall_status | RECRUITING | 46 |
+| p1_venospatial | phase | EARLY_PHASE1 | 3 |
+| p1_venospatial | phase | NA | 99 |
+| p1_venospatial | phase | PHASE1 | 13 |
+| p1_venospatial | phase | PHASE2 | 25 |
+| p1_venospatial | phase | PHASE3 | 3 |
+| p1_venospatial | phase | PHASE4 | 11 |
+| p3_marketplace | country | Argentina | 1 |
+| p3_marketplace | country | Australia | 1 |
+| p3_marketplace | country | Austria | 2 |
+| p3_marketplace | country | Bangladesh | 1 |
+| p3_marketplace | country | Belarus | 1 |
+| p3_marketplace | country | Belgium | 3 |
+| p3_marketplace | country | Brazil | 1 |
+| p3_marketplace | country | Canada | 13 |
+| p3_marketplace | country | Chile | 1 |
+| p3_marketplace | country | China | 18 |
+| p3_marketplace | country | Colombia | 2 |
+| p3_marketplace | country | Cyprus | 2 |
+| p3_marketplace | country | Czechia | 1 |
+| p3_marketplace | country | Denmark | 36 |
+| p3_marketplace | country | Egypt | 11 |
+| p3_marketplace | country | Finland | 2 |
+| p3_marketplace | country | France | 6 |
+| p3_marketplace | country | Germany | 20 |
+| p3_marketplace | country | Greece | 2 |
+| p3_marketplace | country | Honduras | 1 |
+| p3_marketplace | country | Hungary | 1 |
+| p3_marketplace | country | India | 3 |
+| p3_marketplace | country | Ireland | 2 |
+| p3_marketplace | country | Israel | 1 |
+| p3_marketplace | country | Italy | 4 |
+| p3_marketplace | country | Japan | 8 |
+| p3_marketplace | country | Malaysia | 2 |
+| p3_marketplace | country | Mexico | 1 |
+| p3_marketplace | country | Netherlands | 6 |
+| p3_marketplace | country | Norway | 4 |
+| p3_marketplace | country | Pakistan | 1 |
+| p3_marketplace | country | Poland | 1 |
+| p3_marketplace | country | Puerto Rico | 1 |
+| p3_marketplace | country | Russia | 4 |
+| p3_marketplace | country | San Marino | 1 |
+| p3_marketplace | country | South Africa | 1 |
+| p3_marketplace | country | South Korea | 4 |
+| p3_marketplace | country | Spain | 5 |
+| p3_marketplace | country | Sweden | 3 |
+| p3_marketplace | country | Switzerland | 5 |
+| p3_marketplace | country | Taiwan | 7 |
+| p3_marketplace | country | Thailand | 3 |
+| p3_marketplace | country | Turkey (Türkiye) | 5 |
+| p3_marketplace | country | United Kingdom | 10 |
+| p3_marketplace | country | United States | 199 |
+| p3_marketplace | overall_status | COMPLETED | 325 |
+| p3_marketplace | overall_status | RECRUITING | 62 |
+| p3_marketplace | phase | EARLY_PHASE1 | 20 |
+| p3_marketplace | phase | NA | 97 |
+| p3_marketplace | phase | PHASE1 | 186 |
+| p3_marketplace | phase | PHASE2 | 72 |
+| p3_marketplace | phase | PHASE3 | 9 |
+| p3_marketplace | phase | PHASE4 | 3 |
+| p4_peptide_service | country | Argentina | 1 |
+| p4_peptide_service | country | Austria | 1 |
+| p4_peptide_service | country | Belarus | 1 |
+| p4_peptide_service | country | Belgium | 2 |
+| p4_peptide_service | country | Brazil | 1 |
+| p4_peptide_service | country | Canada | 1 |
+| p4_peptide_service | country | Chile | 1 |
+| p4_peptide_service | country | China | 9 |
+| p4_peptide_service | country | Colombia | 1 |
+| p4_peptide_service | country | Cyprus | 1 |
+| p4_peptide_service | country | Denmark | 15 |
+| p4_peptide_service | country | France | 3 |
+| p4_peptide_service | country | Germany | 13 |
+| p4_peptide_service | country | Greece | 2 |
+| p4_peptide_service | country | Hungary | 1 |
+| p4_peptide_service | country | India | 1 |
+| p4_peptide_service | country | Japan | 8 |
+| p4_peptide_service | country | Malaysia | 1 |
+| p4_peptide_service | country | Mexico | 1 |
+| p4_peptide_service | country | Netherlands | 4 |
+| p4_peptide_service | country | Norway | 4 |
+| p4_peptide_service | country | Puerto Rico | 1 |
+| p4_peptide_service | country | South Africa | 1 |
+| p4_peptide_service | country | Sweden | 1 |
+| p4_peptide_service | country | Switzerland | 4 |
+| p4_peptide_service | country | Thailand | 2 |
+| p4_peptide_service | country | United Kingdom | 4 |
+| p4_peptide_service | country | United States | 150 |
+| p4_peptide_service | overall_status | COMPLETED | 181 |
+| p4_peptide_service | overall_status | RECRUITING | 35 |
+| p4_peptide_service | phase | EARLY_PHASE1 | 13 |
+| p4_peptide_service | phase | NA | 13 |
+| p4_peptide_service | phase | PHASE1 | 133 |
+| p4_peptide_service | phase | PHASE2 | 53 |
+| p4_peptide_service | phase | PHASE3 | 4 |
+| p5_venomate | country | Australia | 1 |
+| p5_venomate | country | China | 2 |
+| p5_venomate | country | Ethiopia | 1 |
+| p5_venomate | country | Ghana | 1 |
+| p5_venomate | country | India | 6 |
+| p5_venomate | country | Mexico | 4 |
+| p5_venomate | country | Morocco | 2 |
+| p5_venomate | country | Nepal | 1 |
+| p5_venomate | country | Sri Lanka | 1 |
+| p5_venomate | country | United States | 15 |
+| p5_venomate | country | Vietnam | 1 |
+| p5_venomate | overall_status | COMPLETED | 32 |
+| p5_venomate | overall_status | RECRUITING | 3 |
+| p5_venomate | phase | NA | 17 |
+| p5_venomate | phase | PHASE1 | 2 |
+| p5_venomate | phase | PHASE2 | 8 |
+| p5_venomate | phase | PHASE3 | 6 |
+| p5_venomate | phase | PHASE4 | 2 |
+| p6_gem | country | Mexico | 3 |
+| p6_gem | country | Morocco | 1 |
+| p6_gem | country | Nepal | 1 |
+| p6_gem | country | United States | 3 |
+| p6_gem | country | Vietnam | 1 |
+| p6_gem | overall_status | COMPLETED | 10 |
+| p6_gem | phase | NA | 1 |
+| p6_gem | phase | PHASE1 | 2 |
+| p6_gem | phase | PHASE2 | 6 |
+| p6_gem | phase | PHASE3 | 1 |

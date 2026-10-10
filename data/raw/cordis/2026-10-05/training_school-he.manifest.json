@@ -1,0 +1,13 @@
+{
+  "source": "cordis",
+  "query": [
+    "doctoral network, doctoral training",
+    "early stage researcher, marie curie"
+  ],
+  "url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip",
+  "timestamp": "2026-10-05T15:22:19Z",
+  "record_count": 360,
+  "sha256": "efdf74fcd8e37472579123a5688a2131d778018f032776b4dfb66b67a3c50dce",
+  "snapshot": "training_school-he.csv",
+  "format": "csv"
+}

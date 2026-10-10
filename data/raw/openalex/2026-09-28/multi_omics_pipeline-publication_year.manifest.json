@@ -1,0 +1,10 @@
+{
+  "source": "openalex",
+  "query": "filter=abstract.search:\"multi-omics pipeline\",from_publication_date:2015-01-01&group_by=publication_year",
+  "url": "https://api.openalex.org/works?group_by=publication_year&per-page=200&cursor=*&api_key=***&filter=abstract.search:\"multi-omics pipeline\",from_publication_date:2015-01-01",
+  "timestamp": "2026-09-28T18:34:28Z",
+  "record_count": 7,
+  "sha256": "92f6e887d33be92cee28f077e83b03fa0d163860d9383688d9be01c8c6595d29",
+  "snapshot": "multi_omics_pipeline-publication_year.csv",
+  "format": "csv"
+}
