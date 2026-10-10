@@ -4,7 +4,7 @@ Thin appendix generator for the VMG2 business plan analysis. Desk research and
 writing first; scripts only feed market sizing and a few trend charts. No
 Docker, no CI, no database, no orchestration — plain Python scripts + a Makefile.
 
-[![DOI](https://zenodo.org/badge/DOI/YOUR.DOI.HERE.svg)](https://doi.org/YOUR.DOI.HERE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23285299.svg)](https://doi.org/10.5281/zenodo.23285299)
 
 ## Rerun everything (3 commands)
 
